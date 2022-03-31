@@ -1,0 +1,26 @@
+using System;
+using System.Linq;
+using System.Numerics;
+using System.Text;
+using System.Collections.Generic;
+using System.Collections;
+
+
+namespace AssociativeArrays
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> input = Console.ReadLine().Split(' ',StringSplitOptions.RemoveEmptyEntries).ToList();
+
+            foreach (string item in input)
+            {
+                if (item.Length%2 == 0)
+                {
+                    Console.WriteLine(item);
+                }
+            }
+        }
+    }
+}
